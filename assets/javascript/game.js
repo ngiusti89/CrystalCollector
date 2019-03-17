@@ -21,65 +21,64 @@ $(document).ready(function() {
     var gemPink = Math.floor(Math.random() * 12) + 1;
         console.log(gemPink);
 
-    //sets up click for jewels
+    // Click functions for gems
   $('#one').on('click', function() {
     total = total + gemBlue;
         console.log("New total = " + total);
-    $('#finalTotal').text(total); 
-          //sets win/lose conditions
-        if (total == RandomNum){
-          yay();
-        }
-        else if ( total > RandomNum){
-          loser();
-        }   
+    $('#finalTotal').text(total);
+    // conditions for what to do based on total/new total number
+    if (total == RandomNum){
+        yay();
+    }
+    else if ( total > RandomNum){
+        loser();
+    }   
   })  
 
   $('#two').on('click', function() {
     total = total + gemRed;
         console.log("New total = " + total);
-    $('#finalTotal').text(total); 
-        if (total == RandomNum){
-          yay();
-        }
-        else if ( total > RandomNum){
-          loser();
-        } 
+    $('#finalTotal').text(total);
+    if (total == RandomNum){
+        yay();
+    }
+    else if ( total > RandomNum){
+        loser();
+    } 
   })  
 
   $('#three').on('click', function() {
     total = total + gemYellow;
         console.log("New total = " + total);
     $('#finalTotal').text(total);
-    //sets win/lose conditions
     if (total == RandomNum){
         yay();
-      }
-      else if ( total > RandomNum){
+    }
+    else if ( total > RandomNum){
         loser();
-      } 
+    } 
   })
 
   $('#four').on('click', function() {
     total = total + gemPink;
         console.log("New total = " + total);
-    $('#finalTotal').text(total); 
-      
-          if (total == RandomNum){
-          yay();
-        }
-        else if ( total > RandomNum){
-          loser();
-        }
+    $('#finalTotal').text(total);
+    if (total == RandomNum){
+        yay();
+    }
+    else if ( total > RandomNum){
+        loser();
+    }
   });
 
-  function yay() {
+    // Alert notifying user of win and adds to win tally
+    function yay() {
     alert("You win!");
       wins++; 
       $('#Wins').text(wins);
       reset();
     }
-    //addes the losses to the userTotal
+    // Alert notifying user of loss and adds to loss tally
     function loser() {
     alert ("You lose!");
       losses++;
@@ -91,7 +90,7 @@ $(document).ready(function() {
     $('#numberWins').text(wins);
     $('#numberLosses').text(losses);
 
-    //resets the game
+    // Resets the game, sets number to zero and generates new numbers
 function reset() {
     RandomNum = Math.floor(Math.random() * 101 + 19);
         console.log(RandomNum)

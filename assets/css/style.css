@@ -1,4 +1,38 @@
-.gemImage{
+/* background image */
+body {
+    background-image: url(/assets/images/crystalsBackground.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+/* componenets ayout */
+.header, .gems {
+    text-align: center;
+}
+
+.container {
+    background: rgba(224, 251, 255, 0.7);
+    margin: 50px;
+    padding: 15px;
+}
+
+.instructions {
+    padding: 20px;
+}
+
+/* text */
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+}
+
+p, #randomNumber, #finalTotal, #Wins, #Losses {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* gem image format */
+.gemImage {
 	height: 100px;
 	margin: 10px;
 }
