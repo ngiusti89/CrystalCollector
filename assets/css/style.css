@@ -15,11 +15,21 @@ body {
 .container {
     background: rgba(224, 251, 255, 0.7);
     margin: 50px;
-    padding: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
 
 .instructions {
     padding: 20px;
+}
+
+.winsAndLosses {
+    float: right;
+    border: outset;
+    border-radius: 10px;
+    padding: 0px 10px;
+    display: inline-block
+    
 }
 
 /* text */
@@ -33,6 +43,6 @@ p, #randomNumber, #finalTotal, #Wins, #Losses {
 
 /* gem image format */
 .gemImage {
-	height: 100px;
+	height: 125px;
 	margin: 10px;
 }
