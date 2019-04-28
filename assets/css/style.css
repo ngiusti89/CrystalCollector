@@ -1,6 +1,6 @@
 /* background image */
 body {
-    background-image: url(/assets/images/crystalsBackground.png);
+    background-image: url(./assets/images/crystalsBackground.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
